@@ -20,7 +20,7 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: "Anitya — Conservación y Adaptación Climática",
   description:
-    "Anitya es una fundación chilena dedicada a la adaptación climática, conservación de la naturaleza y educación ambiental.",
+    "Anitya es una organización chilena dedicada a la adaptación climática, conservación de la naturaleza y educación ambiental.",
 };
 
 export default function RootLayout({

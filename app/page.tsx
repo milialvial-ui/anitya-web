@@ -3,21 +3,21 @@ import Link from "next/link";
 const pilares = [
   {
     numero: "01",
-    titulo: "Adaptación Climática",
+    titulo: "Educación e Investigación",
     descripcion:
-      "Desarrollamos estrategias y apoyamos a comunidades y ecosistemas para adaptarse a los efectos del cambio climático.",
+      "Entregamos un espacio de encuentro que fortalece la resiliencia climática, facilita el acceso a la naturaleza y genera experiencias que permiten comprender el medio ambiente como sistema global en permanente modificación.",
   },
   {
     numero: "02",
-    titulo: "Conservación",
+    titulo: "Protección del Medio Ambiente",
     descripcion:
-      "Protegemos y restauramos ecosistemas nativos, biodiversidad y territorios amenazados a lo largo de Chile.",
+      "Realizamos acciones para el uso consciente de energía y recursos naturales, la reducción y captura de gases de efecto invernadero, la economía circular y el control de la contaminación en todas sus formas.",
   },
   {
     numero: "03",
-    titulo: "Educación Ambiental",
+    titulo: "Conservación de la Naturaleza",
     descripcion:
-      "Formamos conciencia ambiental en comunidades, escuelas y organizaciones para un futuro sostenible.",
+      "Conservamos la tierra y sus ecosistemas, promovemos la preservación, restauración y regeneración de la naturaleza, y protegemos el patrimonio natural y cultural, especialmente en territorios de alto valor natural.",
   },
 ];
 
@@ -35,34 +35,22 @@ export default function Home() {
           </Link>
           <ul className="hidden md:flex items-center gap-8 text-sm">
             <li>
-              <Link
-                href="/nosotros"
-                className="text-crema/80 hover:text-crema transition-colors"
-              >
+              <Link href="/nosotros" className="text-crema/80 hover:text-crema transition-colors">
                 Nosotros
               </Link>
             </li>
             <li>
-              <Link
-                href="/programas"
-                className="text-crema/80 hover:text-crema transition-colors"
-              >
+              <Link href="/programas" className="text-crema/80 hover:text-crema transition-colors">
                 Programas
               </Link>
             </li>
             <li>
-              <Link
-                href="/noticias"
-                className="text-crema/80 hover:text-crema transition-colors"
-              >
+              <Link href="/noticias" className="text-crema/80 hover:text-crema transition-colors">
                 Noticias
               </Link>
             </li>
             <li>
-              <Link
-                href="/eventos"
-                className="text-crema/80 hover:text-crema transition-colors"
-              >
+              <Link href="/eventos" className="text-crema/80 hover:text-crema transition-colors">
                 Eventos
               </Link>
             </li>
@@ -79,17 +67,27 @@ export default function Home() {
       </header>
 
       {/* Hero */}
-      <section className="min-h-screen bg-verde flex items-center">
-        <div className="max-w-6xl mx-auto px-6 pt-32 pb-20 w-full">
-          <p className="text-tierra text-xs font-semibold tracking-[0.2em] uppercase mb-6">
-            Chile · Fundación Ambiental
+      <section
+        className="relative min-h-screen flex items-center"
+        style={{
+          backgroundImage:
+            "url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=1920&q=80')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="absolute inset-0 bg-verde/75" />
+        <div className="relative z-10 max-w-6xl mx-auto px-6 pt-32 pb-20 w-full">
+          <p className="text-white text-xs font-semibold tracking-[0.2em] uppercase mb-6">
+            Chile · Organización Ambiental
           </p>
           <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-crema leading-[1.05] mb-8 max-w-4xl">
-            Protegemos la naturaleza para las próximas generaciones
+            Adaptación climática, protección y regeneración de la naturaleza
           </h1>
           <p className="text-crema/65 text-lg md:text-xl max-w-2xl leading-relaxed mb-12">
-            Trabajamos en adaptación climática, conservación del territorio y
-            educación ambiental para construir un Chile más resiliente y verde.
+            Creamos, desarrollamos e implementamos programas y acciones para la
+            adaptación al cambio climático, la protección del medio ambiente, y
+            la conservación y regeneración de la naturaleza.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
@@ -109,6 +107,7 @@ export default function Home() {
       </section>
 
       {/* Pillars */}
+
       <section className="py-24 bg-crema">
         <div className="max-w-6xl mx-auto px-6">
           <div className="mb-16">
@@ -116,8 +115,9 @@ export default function Home() {
               Nuestros pilares de acción
             </h2>
             <p className="text-verde/55 text-lg max-w-xl leading-relaxed">
-              Tres áreas de trabajo que guían nuestra misión de proteger y
-              regenerar el territorio chileno.
+              Tres áreas que guían nuestra misión de reflexionar en conciencia
+              con la naturaleza y recobrar nuestro balance interno y con el
+              entorno.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -148,8 +148,10 @@ export default function Home() {
             Súmate a nuestra misión
           </h2>
           <p className="text-crema/75 text-lg max-w-xl mx-auto mb-10 leading-relaxed">
-            Juntos podemos construir un futuro más sostenible para Chile y sus
-            ecosistemas.
+            Promovemos y participamos en actividades de educación, investigación,
+            conservación y cultura — seminarios, talleres, publicaciones y
+            programas de difusión — para el desarrollo sostenible y la salud
+            humana, animal y ambiental.
           </p>
           <Link
             href="/contacto"
