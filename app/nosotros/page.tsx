@@ -8,25 +8,6 @@ const VALLEY_IMAGE =
 export default function Nosotros() {
   return (
     <>
-      <header className="fixed top-0 w-full bg-verde/90 backdrop-blur-sm z-50">
-        <nav className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <Link href="/" className="text-crema font-serif text-xl font-bold tracking-tight">
-            Anitya
-          </Link>
-          <ul className="hidden md:flex items-center gap-8 text-sm">
-            <li><Link href="/nosotros" className="text-crema transition-colors">Nosotros</Link></li>
-            <li><Link href="/programas" className="text-crema/80 hover:text-crema transition-colors">Programas</Link></li>
-            <li><Link href="/noticias" className="text-crema/80 hover:text-crema transition-colors">Noticias</Link></li>
-            <li><Link href="/eventos" className="text-crema/80 hover:text-crema transition-colors">Eventos</Link></li>
-            <li>
-              <Link href="/contacto" className="bg-tierra text-crema px-5 py-2 rounded-full hover:bg-tierra/85 transition-colors">
-                Contacto
-              </Link>
-            </li>
-          </ul>
-        </nav>
-      </header>
-
       {/* Hero — valle verde */}
       <section
         className="relative min-h-[70vh] flex items-end"
